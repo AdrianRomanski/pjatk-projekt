@@ -1,4 +1,4 @@
-# Polsko-Japonska-Projekt
+# Polsko-Japońska-Projekt
 * Stanislaw "stachujones" Lammel
 * 
 * Evgenii Kosmogradskii-Ivanov
