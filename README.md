@@ -7,3 +7,4 @@
 * Tomasz "Buczeq" Buczyński
 * Aleksandra "dorsha" Najmowicz
 * Mateusz Dąbrowski
+* Damian Rastawicki (disc: LukS#1869)
