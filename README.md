@@ -1,3 +1,4 @@
 # Polsko-Japonska-Projekt
-Stanisław "stachujones" Lammel 
+Stanislaw "stachujones" Lammel
+
 Aleks Łapiński (Dis: Aleksssss)
