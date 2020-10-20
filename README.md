@@ -1,4 +1,4 @@
-# Polsko-Japonska-Projekt
+# Polsko-Japońska-Projekt
 * Stanislaw "stachujones" Lammel
 * Michał "Lotnest" Błoch
 * Evgenii Kosmogradskii-Ivanov
