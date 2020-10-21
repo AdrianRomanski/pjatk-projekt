@@ -10,3 +10,4 @@
 * Damian Rastawicki (disc: LukS#1869)
 * Paweł Nic
 * Paweł Dąbrowski (disc: fluor)
+* Krzysztof Jazgierski (Disc: Jazgier24#7341)
