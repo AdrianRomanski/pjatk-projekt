@@ -9,3 +9,4 @@
 * Mateusz Dąbrowski
 * Damian Rastawicki (disc: LukS#1869)
 * Paweł Nic
+* Paweł Dąbrowski (disc: fluor)
