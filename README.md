@@ -8,3 +8,4 @@
 * Aleksandra "dorsha" Najmowicz
 * Mateusz Dąbrowski
 * Damian Rastawicki (disc: LukS#1869)
+* Krzysztof Jazgierski (Disc: Jazgier24#7341)
