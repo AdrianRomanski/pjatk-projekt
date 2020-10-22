@@ -14,3 +14,4 @@
 * Marta Pęska (disc: martpe95)
 * Jarosław Małucha (disc: jaroslaw.malucha)
 * Marcin Sendek
+* Krzysztof "Olundir" Jeżak
