@@ -15,3 +15,4 @@
 * Jarosław Małucha (disc: jaroslaw.malucha)
 * Marcin Sendek
 * Krzysztof "Olundir" Jeżak
+* Wiktor Snochowski (HappyHormone)
