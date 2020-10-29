@@ -18,3 +18,4 @@
 * Wiktor Snochowski (HappyHormone)
 * Oskar Ratus (disc: Marik__1234#9080)
 * Wojciech "Wojt3kS" Szałkowski
+* Bartłomiej Kamiński ( disc: Snickers333#2292)
