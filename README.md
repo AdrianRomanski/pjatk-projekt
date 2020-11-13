@@ -20,3 +20,4 @@
 * Wojciech "Wojt3kS" Szałkowski
 * Bartłomiej Kamiński ( disc: Snickers333#2292)
 [Marcin Lat](https://github.com/Marcinlat)
+* Michał Jagiełło (s22060, discord: Easy#5331)
