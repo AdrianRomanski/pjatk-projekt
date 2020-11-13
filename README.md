@@ -1,23 +1,29 @@
 # Polsko-Japońska-Projekt
-* Stanislaw "stachujones" Lammel
-* Michał "Lotnest" Błoch
-* Evgenii Kosmogradskii-Ivanov
-* Aleks Łapiński (Dis: Aleksssss)
-* Mateusz "d3ska" Deska
-* Tomasz "Buczeq" Buczyński
-* Aleksandra "dorsha" Najmowicz
-* Mateusz Dąbrowski
-* Damian Rastawicki (disc: LukS#1869)
-* Paweł Nic
-* Paweł Dąbrowski (disc: fluor)
-* Krzysztof Jazgierski (Disc: Jazgier24#7341)
-* Marta Pęska (disc: martpe95)
-* Jarosław Małucha (disc: jaroslaw.malucha)
-* Marcin Sendek
-* Krzysztof "Olundir" Jeżak
-* Wiktor Snochowski (HappyHormone)
-* Oskar Ratus (disc: Marik__1234#9080)
-* Wojciech "Wojt3kS" Szałkowski
-* Bartłomiej Kamiński ( disc: Snickers333#2292)
-[Marcin Lat](https://github.com/Marcinlat)
-* Michał Jagiełło (s22060, discord: Easy#5331)
+
+We are a group of Students From https://www.pja.edu.pl
+
+| Github     | Linkedin |
+| ----------- | ----------- |
+| Stanisław Lammel    | Title       |
+| Michał Błoch    | Title       |
+| Evgenii Kosmogradskii-Ivanov    | Title       |
+| Aleks Łapiński    | Title       |
+| Mateusz  Deska    | Title       |
+| Tomasz  Buczyński    | Title       |
+| Aleksandra  Najmowicz    | Title       |
+| Mateusz  Dąbrowski    | Title       |
+| Damian  Rastawicki    | Title       |
+| Paweł  Nic    | Title       |
+| Paweł  Dąbrowski    | Title       |
+| Krzysztof Jazgierski    | Title       |
+| Marta Pęska    | Title       |
+| Jarosław Małucha    | Title       |
+| Marcin Sendek    | Title       |
+| Krzysztof Jeżak    | Title       |
+| Wiktor Snochowski    | Title       |
+| Oskar Ratus    | Title       |
+| Wojciech Szałkowski    | Title       |
+| Bartłomiej Kamiński    | Title       |
+| [Marcin Lat](https://github.com/Marcinlat)    | Title      |
+| Michał Jagiełło    | Title       |
+| Monix    | Title       |
