@@ -1,0 +1,45 @@
+package pl.pjatk.projekt.services.computer;
+
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
+
+import java.util.Arrays;
+
+import static org.mockito.Mockito.when;
+
+public class ComputerServiceImplTest {
+    
+    
+    @Mock
+    ComputerRepository computerRepository;
+    
+    @InjectMocks
+    ComputerServiceImpl computerService;
+    
+    
+    @BeforeEach() 
+    void setup() {
+        MockitoAnnotations.openMocks(this);
+    }
+
+
+    @Test
+    @DisplayName("Should Return List Of Computers")
+    void getComputers() {
+        //given
+        List<Computer> computers = Arrays.asList(new Computer(), new Computer());
+        //when
+
+        when(computerRepository.findAll()).thenReturn(computers);
+        //then
+        
+        List<Computer> returnObj = computerService.getComputers();
+
+        Assertions.assertEquals(returnObj.size(), 2);
+    }
+}
