@@ -23,7 +23,6 @@ We are a group of Students From https://www.pja.edu.pl
 | Wiktor Snochowski    | Title       |
 | Oskar Ratus    | Title       |
 | Wojciech Szałkowski    | Title       |
-| Bartłomiej Kamiński    | Title       |
 | [Marcin Lat](https://github.com/Marcinlat)    | Title      |
 | Michał Jagiełło    | Title       |
 | Monix    | Title       |
