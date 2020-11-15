@@ -12,7 +12,7 @@ import java.util.List;
 
 @RestController
 @AllArgsConstructor
-@RequestMapping("api/books")
+@RequestMapping("/api/books")
 public class BooksController {
 
     private final BookService bookService;
