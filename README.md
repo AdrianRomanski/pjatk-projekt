@@ -4,6 +4,7 @@ We are a group of Students From https://www.pja.edu.pl
 
 | Github     | Linkedin |
 | ----------- | ----------- |
+| [Paweł  Dąbrowski](https://github.com/PawelDabrowski83)    | Title       |
 | Stanisław Lammel    | Title       |
 | Michał Błoch    | Title       |
 | Evgenii Kosmogradskii-Ivanov    | Title       |
@@ -14,7 +15,6 @@ We are a group of Students From https://www.pja.edu.pl
 | Mateusz  Dąbrowski    | Title       |
 | Damian  Rastawicki    | Title       |
 | Paweł  Nic    | Title       |
-| Paweł  Dąbrowski    | Title       |
 | Krzysztof Jazgierski    | Title       |
 | Marta Pęska    | Title       |
 | Jarosław Małucha    | Title       |

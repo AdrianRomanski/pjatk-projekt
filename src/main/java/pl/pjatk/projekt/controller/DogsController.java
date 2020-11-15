@@ -1,5 +1,6 @@
 package pl.pjatk.projekt.controller;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,7 +18,7 @@ public class DogsController {
 
     private final DogService dogService;
 
-    @GetMapping("/dogs")
+    @GetMapping()
     private List<Dog> getDogs() {
         return dogService.getDogs();
     }

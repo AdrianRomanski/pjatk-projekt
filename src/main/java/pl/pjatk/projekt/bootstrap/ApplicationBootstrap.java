@@ -20,6 +20,7 @@ import pl.pjatk.projekt.repositories.events.ExpertRepository;
 import pl.pjatk.projekt.repositories.events.LectureRepository;
 
 import java.time.LocalDate;
+import java.util.Arrays;
 import java.util.List;
 
 @Component
@@ -68,30 +69,38 @@ public class ApplicationBootstrap implements ApplicationListener<ContextRefreshe
                 .specialization("Various")
                 .build();
 
-        expertRepository.save(expert);
+
 
         Lecture lecture = Lecture.builder()
-                .lecturer(expert)
+                .expert(expert)
                 .numberOfLectures(3)
                 .availableDuringCovid(true)
                 .subject("Wstęp")
+                .eventStarts(LocalDate.now())
+                .eventEnds(LocalDate.now())
                 .build();
 
         Lecture lecture2 = Lecture.builder()
-                .lecturer(expert)
+                .expert(expert)
                 .numberOfLectures(15)
                 .availableDuringCovid(false)
                 .subject("TAK")
                 .build();
+
+        expert.getLectures().addAll(Arrays.asList(lecture, lecture2));
+
+
+        expertRepository.save(expert);
 
         lectureRepository.save(lecture);
         lectureRepository.save(lecture2);
 
         Course course = Course.builder()
                 .lectures(List.of(lecture, lecture2))
+                .eventStarts(LocalDate.now())
+                .eventEnds(LocalDate.now())
                 .build();
 
         courseRepository.save(course);
-
     }
 }

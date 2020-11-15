@@ -2,18 +2,16 @@
 GET http://localhost:8080/api/experts
 Accept: application/json
 ###
+
 GET http://localhost:8080/api/lectures
 Accept: application/json
 ###
+
 GET http://localhost:8080/api/courses
 Accept: application/json
 ###
 
-GET http://localhost:8080/api/products/dogs
-Accept: application/json
-
-####
-GET http://localhost:8080/api/books
+GET http://localhost:8080/api/dogs
 Accept: application/json
 
 
