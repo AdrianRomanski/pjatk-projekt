@@ -18,38 +18,10 @@ GET http://localhost:8080/api/courses
 Accept: application/json
 ###
 
+GET http://localhost:8080/api/smartwatch
+Accept: application/json
+###
 
-####
-#
-#POST http://localhost:8080/api/products
-#Content-Type: application/json
-#
-#{
-#  "name": "Microservices in practice (e-book)",
-#  "description": "Book",
-#  "price": "100.99 PLN",
-#  "type": "EBOOK"
-#}
-#
-####
-#
-#GET http://localhost:8080/api/products
-#Accept: application/json
-#
-####
-#
-#POST http://localhost:8080/api/products/1/files
-#Content-Type: multipart/form-data; boundary=WebAppBoundary
-#
-#POST http://localhost:8080/api/users
-#Content-Type: application/json
-#
-#{
-#  "firstName": "Monika",
-#  "lastName": "Zawada",
-#  "emailAddress": "monika@training.pl"
-#}
-####
 
 --WebAppBoundary
 Content-Disposition: form-data; name="file"; filename="pom.xml"
