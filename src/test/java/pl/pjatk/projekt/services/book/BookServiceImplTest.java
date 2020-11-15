@@ -1,6 +1,5 @@
 package pl.pjatk.projekt.services.book;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -8,7 +7,7 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import pl.pjatk.projekt.model.books.Book;
-import pl.pjatk.projekt.repositories.BookRepository;
+import pl.pjatk.projekt.repositories.book.BookRepository;
 
 import java.util.Arrays;
 import java.util.List;

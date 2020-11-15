@@ -1,11 +1,11 @@
-package pl.pjatk.projekt.controller;
+package pl.pjatk.projekt.controller.book;
 
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import pl.pjatk.projekt.model.books.Author;
-import pl.pjatk.projekt.repositories.AuthorRepository;
+import pl.pjatk.projekt.repositories.book.AuthorRepository;
 
 import java.util.List;
 

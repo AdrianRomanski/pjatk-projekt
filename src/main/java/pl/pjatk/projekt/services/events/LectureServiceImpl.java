@@ -3,7 +3,7 @@ package pl.pjatk.projekt.services.events;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import pl.pjatk.projekt.model.events.Lecture;
-import pl.pjatk.projekt.repositories.events.LectureRepository;
+import pl.pjatk.projekt.repositories.courses.LectureRepository;
 
 import java.util.List;
 

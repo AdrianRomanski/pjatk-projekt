@@ -3,7 +3,7 @@ package pl.pjatk.projekt.services.events;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import pl.pjatk.projekt.model.events.Expert;
-import pl.pjatk.projekt.repositories.events.ExpertRepository;
+import pl.pjatk.projekt.repositories.courses.ExpertRepository;
 
 import java.util.List;
 

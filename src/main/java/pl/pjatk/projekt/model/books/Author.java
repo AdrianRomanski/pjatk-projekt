@@ -1,32 +1,31 @@
 package pl.pjatk.projekt.model.books;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.*;
-import pl.pjatk.projekt.model.BaseEntity;
-
+import pl.pjatk.projekt.model.person.Person;
 
 import javax.persistence.Entity;
-import javax.persistence.ManyToMany;
+import javax.persistence.FetchType;
 import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-
 @Entity
 @Getter
 @Setter
-@Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Author extends BaseEntity {
+public class Author extends Person {
 
-    private String firstName;
-    private String lastName;
-    private LocalDate ageOfBirth;
+    @JsonBackReference
+    @OneToMany (mappedBy = "author", fetch = FetchType.EAGER)
+    private List<Book> books;
 
-    @OneToOne(mappedBy = "author")
-    private Book book;
-
+    @Builder
+    public Author(String firstName, String lastName, LocalDate ageOfBirth,  List<Book> books) {
+        super(firstName, lastName, ageOfBirth);
+        this.books = Objects.requireNonNullElseGet(books, ArrayList::new);
+    }
 }

@@ -7,7 +7,7 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import pl.pjatk.projekt.model.events.Expert;
-import pl.pjatk.projekt.repositories.events.ExpertRepository;
+import pl.pjatk.projekt.repositories.courses.ExpertRepository;
 
 import java.util.Arrays;
 import java.util.List;

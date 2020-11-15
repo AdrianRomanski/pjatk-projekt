@@ -1,4 +1,4 @@
-package pl.pjatk.projekt.controller.events;
+package pl.pjatk.projekt.controller.courses;
 
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;

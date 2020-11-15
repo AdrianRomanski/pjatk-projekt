@@ -1,4 +1,4 @@
-package pl.pjatk.projekt.repositories.events;
+package pl.pjatk.projekt.repositories.courses;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import pl.pjatk.projekt.model.events.Lecture;
