@@ -9,6 +9,7 @@ import pl.pjatk.projekt.enums.BookType;
 import pl.pjatk.projekt.enums.Category;
 import pl.pjatk.projekt.model.books.Author;
 import pl.pjatk.projekt.model.books.Book;
+import pl.pjatk.projekt.model.electronics.SmartWatch;
 import pl.pjatk.projekt.model.events.Course;
 import pl.pjatk.projekt.model.events.Expert;
 import pl.pjatk.projekt.model.events.Lecture;
@@ -17,6 +18,7 @@ import pl.pjatk.projekt.repositories.book.BookRepository;
 import pl.pjatk.projekt.repositories.courses.CourseRepository;
 import pl.pjatk.projekt.repositories.courses.ExpertRepository;
 import pl.pjatk.projekt.repositories.courses.LectureRepository;
+import pl.pjatk.projekt.repositories.electronics.SmartWatchRepository;
 
 import java.time.LocalDate;
 import java.util.Arrays;
@@ -33,6 +35,8 @@ public class ApplicationBootstrap implements ApplicationListener<ContextRefreshe
     private final ExpertRepository expertRepository;
     private final LectureRepository lectureRepository;
     private final CourseRepository courseRepository;
+    // Electronics
+    private final SmartWatchRepository smartWatchRepository;
 
 
     @Override
@@ -68,6 +72,20 @@ public class ApplicationBootstrap implements ApplicationListener<ContextRefreshe
         authorRepository.save(author);
         bookRepository.save(book);
         bookRepository.save(book2);
+
+        //Do not refactor to method - example simple entity
+        // Smart Watch
+        SmartWatch smartWatch = SmartWatch.builder()
+                .name("iWatch")
+                .price(245.60)
+                .category(Category.ELECTRONICS)
+                .batterPower(12.4).color("Blue")
+                .brand("Apple")
+                .build();
+
+        smartWatchRepository.save(smartWatch);
+
+
 
         initCourses();
     }
