@@ -7,7 +7,7 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import pl.pjatk.projekt.model.events.Lecture;
-import pl.pjatk.projekt.repositories.events.LectureRepository;
+import pl.pjatk.projekt.repositories.courses.LectureRepository;
 
 import java.util.Arrays;
 import java.util.List;
