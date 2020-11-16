@@ -10,6 +10,7 @@ import pl.pjatk.projekt.enums.Category;
 import pl.pjatk.projekt.model.books.Author;
 import pl.pjatk.projekt.model.books.Book;
 import pl.pjatk.projekt.model.electronics.SmartWatch;
+import pl.pjatk.projekt.model.electronics.Xbox;
 import pl.pjatk.projekt.model.events.Course;
 import pl.pjatk.projekt.model.events.Expert;
 import pl.pjatk.projekt.model.events.Lecture;
@@ -19,6 +20,7 @@ import pl.pjatk.projekt.repositories.courses.CourseRepository;
 import pl.pjatk.projekt.repositories.courses.ExpertRepository;
 import pl.pjatk.projekt.repositories.courses.LectureRepository;
 import pl.pjatk.projekt.repositories.electronics.SmartWatchRepository;
+import pl.pjatk.projekt.repositories.electronics.XboxRepository;
 
 import java.time.LocalDate;
 import java.util.Arrays;
@@ -37,6 +39,7 @@ public class ApplicationBootstrap implements ApplicationListener<ContextRefreshe
     private final CourseRepository courseRepository;
     // Electronics
     private final SmartWatchRepository smartWatchRepository;
+    private final XboxRepository xboxRepository;
 
 
     @Override
@@ -85,6 +88,44 @@ public class ApplicationBootstrap implements ApplicationListener<ContextRefreshe
 
         smartWatchRepository.save(smartWatch);
 
+       //Xbox
+
+        Xbox xbox = Xbox.builder()
+                .name("Xbox One X")
+                .price(150.20)
+                .category(Category.ELECTRONICS)
+                .color("Black")
+                .DiscVolume(1024)
+                .build();
+
+        Xbox xbox1 = Xbox.builder()
+                .name("Xbox One X")
+                .price(150.20)
+                .category(Category.ELECTRONICS)
+                .color("White")
+                .DiscVolume(1024)
+                .build();
+
+        Xbox xbox2 = Xbox.builder()
+                .name("Xbox Series X")
+                .category(Category.ELECTRONICS)
+                .price(1050.30)
+                .color("Black")
+                .DiscVolume(1024)
+                .build();
+
+        Xbox xbox3 = Xbox.builder()
+                .name("Xbox Series S")
+                .category(Category.ELECTRONICS)
+                .price(1050.30)
+                .color("White")
+                .DiscVolume(1024)
+                .build();
+
+        xboxRepository.save(xbox);
+        xboxRepository.save(xbox1);
+        xboxRepository.save(xbox2);
+        xboxRepository.save(xbox3);
 
 
         initCourses();
