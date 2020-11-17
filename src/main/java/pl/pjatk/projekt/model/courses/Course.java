@@ -1,4 +1,4 @@
-package pl.pjatk.projekt.model.events;
+package pl.pjatk.projekt.model.courses;
 
 import lombok.*;
 import pl.pjatk.projekt.enums.Category;
