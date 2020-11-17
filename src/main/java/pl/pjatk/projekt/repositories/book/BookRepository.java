@@ -1,4 +1,4 @@
-package pl.pjatk.projekt.repositories;
+package pl.pjatk.projekt.repositories.book;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import pl.pjatk.projekt.model.books.Book;

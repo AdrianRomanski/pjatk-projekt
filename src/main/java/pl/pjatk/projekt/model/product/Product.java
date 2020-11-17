@@ -1,21 +1,20 @@
 package pl.pjatk.projekt.model.product;
 
 import lombok.*;
+import pl.pjatk.projekt.enums.Category;
 import pl.pjatk.projekt.model.BaseEntity;
-import pl.pjatk.projekt.model.Category;
 
-import javax.persistence.ManyToOne;
+import javax.persistence.MappedSuperclass;
 
 @Setter
 @Getter
+@MappedSuperclass
 @NoArgsConstructor
 @AllArgsConstructor
 public class Product extends BaseEntity {
 
     private Double price;
     private String name;
-
-    @ManyToOne
     private Category category;
 
 
