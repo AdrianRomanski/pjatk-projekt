@@ -1,6 +1,6 @@
-package pl.pjatk.projekt.services.events;
+package pl.pjatk.projekt.services.courses;
 
-import pl.pjatk.projekt.model.events.Expert;
+import pl.pjatk.projekt.model.courses.Expert;
 
 import java.util.List;
 

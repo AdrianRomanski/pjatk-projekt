@@ -1,4 +1,4 @@
-package pl.pjatk.projekt.services.events;
+package pl.pjatk.projekt.services.courses;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-import pl.pjatk.projekt.model.events.Course;
+import pl.pjatk.projekt.model.courses.Course;
 import pl.pjatk.projekt.repositories.courses.CourseRepository;
 
 import java.util.Arrays;
