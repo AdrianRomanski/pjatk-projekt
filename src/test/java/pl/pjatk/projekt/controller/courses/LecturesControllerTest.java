@@ -70,11 +70,11 @@ public class LecturesControllerTest {
 
     }
 
-    @Disabled("not sure how to check properties of inner field")
     @Test
-    @DisplayName("Should return list of Lectures with Expert field properties")
+    @DisplayName("Should return list of Lectures")
     void getLecturesWithExpert() throws Exception{
         // given
+        // We need DTO to expose expert field
         Expert expert = Expert.builder()
                 .firstName("Janusz")
                 .lastName("Tracz")
@@ -99,9 +99,10 @@ public class LecturesControllerTest {
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(asJsonString(lectures)))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.[0].expert", equalTo(asJsonString(expert))))
-                .andExpect(jsonPath("$.[0].expert", equalTo("Janusz")))
-                .andExpect(jsonPath("$.[0].expert[*]", hasSize(4)));
+                .andExpect(jsonPath("$.[0].subject",equalTo("Introduction")))
+                .andExpect(jsonPath("$.[0].numberOfLectures",equalTo(10)))
+                .andExpect(jsonPath("$.[0].availableDuringCovid",equalTo(true)))
+                .andExpect(jsonPath("$",hasSize(3)));
 
     }
 }
