@@ -20,7 +20,6 @@ public class Lecture extends Product {
     private int numberOfLectures;
     private Boolean availableDuringCovid;
 
-    @JsonBackReference
     @ManyToOne(fetch = FetchType.EAGER)
     private Expert expert;
 

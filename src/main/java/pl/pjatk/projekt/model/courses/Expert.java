@@ -20,10 +20,8 @@ public class Expert extends Person {
 
     private String specialization;
 
-    @JsonManagedReference
     @OneToMany(mappedBy = "expert")
     private List<Lecture> lectures;
-
 
     @Builder
     public Expert(String firstName, String lastName, LocalDate ageOfBirth, String specialization, List<Lecture> lectures) {
