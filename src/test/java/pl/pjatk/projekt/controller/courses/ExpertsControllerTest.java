@@ -22,7 +22,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 import static pl.pjatk.projekt.controller.AbstractRestControllerTest.asJsonString;
 
-public class ExpertControllerTest {
+public class ExpertsControllerTest {
 
     @Mock
     ExpertServiceImpl expertService;
