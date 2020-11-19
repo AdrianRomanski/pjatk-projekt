@@ -15,7 +15,7 @@ import static java.util.stream.Collectors.toList;
 public class LectureServiceImpl implements LectureService{
 
     private final LectureRepository lectureRepository;
-    private final LecturesMapper mapper;
+    private final LecturesMapper mapper = LecturesMapper.INSTANCE;
 
     @Override
     public List<LectureDTO> getLecturesDTO() {
