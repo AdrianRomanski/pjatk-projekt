@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+import pl.pjatk.projekt.dto.courses.ExpertDTO;
 import pl.pjatk.projekt.model.courses.Expert;
 import pl.pjatk.projekt.repositories.courses.ExpertRepository;
 
@@ -36,7 +37,7 @@ public class ExpertServiceImplTest {
 
         // when
         when(expertRepository.findAll()).thenReturn(experts);
-        List<Expert> returnObj = expertService.getExperts();
+        List<ExpertDTO> returnObj = expertService.getExpertsDTO();
 
         // then
         assertEquals(returnObj.size(), 3);

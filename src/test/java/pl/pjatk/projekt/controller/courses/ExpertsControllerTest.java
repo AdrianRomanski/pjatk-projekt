@@ -9,6 +9,7 @@ import org.mockito.MockitoAnnotations;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
+import pl.pjatk.projekt.dto.courses.ExpertDTO;
 import pl.pjatk.projekt.model.courses.Expert;
 import pl.pjatk.projekt.services.courses.ExpertServiceImpl;
 
@@ -43,18 +44,18 @@ public class ExpertsControllerTest {
     @DisplayName("Should return list of Experts")
     void getExperts() throws Exception{
         // given
-        Expert expert = new Expert();
-        expert.setSpecialization("testSpecialization");
+        ExpertDTO expertDTO = new ExpertDTO();
+        expertDTO.setSpecialization("testSpecialization");
 
-        List<Expert> experts = List.of(expert, new Expert());
+        List<ExpertDTO> expertsDTO = List.of(expertDTO, new ExpertDTO());
 
         // when
-        when(expertService.getExperts()).thenReturn(experts);
+        when(expertService.getExpertsDTO()).thenReturn(expertsDTO);
 
         // then
         mockMvc.perform(get("/api/experts")
                 .contentType(MediaType.APPLICATION_JSON)
-                .content(asJsonString(experts)))
+                .content(asJsonString(expertsDTO)))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.[0].specialization",equalTo("testSpecialization")))
                 .andExpect(jsonPath("$",hasSize(2)));
