@@ -1,8 +1,8 @@
-package pl.pjatk.projekt.services.events;
+package pl.pjatk.projekt.services.courses;
 
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
-import pl.pjatk.projekt.model.events.Expert;
+import pl.pjatk.projekt.model.courses.Expert;
 import pl.pjatk.projekt.repositories.courses.ExpertRepository;
 
 import java.util.List;
