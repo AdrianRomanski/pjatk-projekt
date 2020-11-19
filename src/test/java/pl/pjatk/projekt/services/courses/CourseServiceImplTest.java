@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+import pl.pjatk.projekt.dto.courses.CourseDTO;
 import pl.pjatk.projekt.model.courses.Course;
 import pl.pjatk.projekt.repositories.courses.CourseRepository;
 
@@ -33,14 +34,14 @@ public class CourseServiceImplTest {
     @Disabled
     @DisplayName("Should Return List of Courses")
     void getCourses(){
-//        // given
-//        List<Cou> courses = Arrays.asList(new Course(), new Course());
-//
-//        // when
-//        when(courseRepository.findAll()).thenReturn(courses);
-//        List<Course> returnObj = courseService.getCoursesDTO();
-//
-//        // then
-//        assertEquals(returnObj.size(), 2);
+        // given
+        List<Course> courses = Arrays.asList(new Course(), new Course());
+
+        // when
+        when(courseRepository.findAll()).thenReturn(courses);
+        List<CourseDTO> returnObj = courseService.getCoursesDTO();
+
+        // then
+        assertEquals(returnObj.size(), 2);
     }
 }
