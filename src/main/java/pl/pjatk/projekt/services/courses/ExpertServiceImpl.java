@@ -15,7 +15,7 @@ import static java.util.stream.Collectors.toList;
 public class ExpertServiceImpl implements ExpertService {
 
     private final ExpertRepository expertRepository;
-    private final ExpertsMapper mapper;
+    private final ExpertsMapper mapper = ExpertsMapper.INSTANCE;
 
     @Override
     public List<ExpertDTO> getExpertsDTO() {
