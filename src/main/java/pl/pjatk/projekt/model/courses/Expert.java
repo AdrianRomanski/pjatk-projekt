@@ -1,6 +1,5 @@
 package pl.pjatk.projekt.model.courses;
 
-import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.*;
 import pl.pjatk.projekt.model.person.Person;
 
