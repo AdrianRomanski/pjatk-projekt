@@ -10,6 +10,8 @@ import org.mockito.MockitoAnnotations;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
+import pl.pjatk.projekt.dto.courses.ExpertDTO;
+import pl.pjatk.projekt.dto.courses.LectureDTO;
 import pl.pjatk.projekt.model.courses.Expert;
 import pl.pjatk.projekt.model.courses.Lecture;
 import pl.pjatk.projekt.services.courses.LectureServiceImpl;
@@ -46,28 +48,27 @@ public class LecturesControllerTest {
     @DisplayName("Should return list of Lectures")
     void getLectures() throws Exception{
         // given
-        Lecture lecture = Lecture.builder()
+        LectureDTO lectureDTO = LectureDTO.builder()
                 .availableDuringCovid(true)
                 .numberOfLectures(10)
                 .subject("Introduction")
                 .build();
 
-        List<Lecture> lectures = List.of(lecture, new Lecture(), new Lecture());
+        List<LectureDTO> lecturesDTO = List.of(lectureDTO, new LectureDTO(), new LectureDTO());
 
         // when
-        when(lectureService.getLectures()).thenReturn(lectures);
+        when(lectureService.getLecturesDTO()).thenReturn(lecturesDTO);
 
         // then
         mockMvc.perform(get("/api/lectures")
                 .contentType(MediaType.APPLICATION_JSON)
-                .content(asJsonString(lectures)))
+                .content(asJsonString(lecturesDTO)))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.[0].availableDuringCovid", equalTo(true)))
                 .andExpect(jsonPath("$.[0].numberOfLectures", equalTo(10)))
                 .andExpect(jsonPath("$.[0].subject", equalTo("Introduction")))
                 .andExpect(jsonPath("$.[1].subject", equalTo(null)))
                 .andExpect(jsonPath("$", hasSize(3)));
-
     }
 
     @Test
@@ -75,34 +76,33 @@ public class LecturesControllerTest {
     void getLecturesWithExpert() throws Exception{
         // given
         // We need DTO to expose expert field
-        Expert expert = Expert.builder()
+        ExpertDTO expertDTO = ExpertDTO.builder()
                 .firstName("Janusz")
                 .lastName("Tracz")
                 .ageOfBirth(LocalDate.of(1990, 1, 1))
                 .specialization("JSon")
                 .build();
 
-        Lecture lecture = Lecture.builder()
-                .expert(expert)
+        LectureDTO lectureDTO = LectureDTO.builder()
+                .expertDTO(expertDTO)
                 .availableDuringCovid(true)
                 .numberOfLectures(10)
                 .subject("Introduction")
                 .build();
 
-        List<Lecture> lectures = List.of(lecture, new Lecture(), new Lecture());
+        List<LectureDTO> lecturesDTO = List.of(lectureDTO, new LectureDTO(), new LectureDTO());
 
         // when
-        when(lectureService.getLectures()).thenReturn(lectures);
+        when(lectureService.getLecturesDTO()).thenReturn(lecturesDTO);
 
         // then
         mockMvc.perform(get("/api/lectures")
                 .contentType(MediaType.APPLICATION_JSON)
-                .content(asJsonString(lectures)))
+                .content(asJsonString(lecturesDTO)))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.[0].subject",equalTo("Introduction")))
                 .andExpect(jsonPath("$.[0].numberOfLectures",equalTo(10)))
                 .andExpect(jsonPath("$.[0].availableDuringCovid",equalTo(true)))
                 .andExpect(jsonPath("$",hasSize(3)));
-
-    }
+        }
 }

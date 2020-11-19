@@ -8,9 +8,9 @@ import pl.pjatk.projekt.model.courses.Lecture;
 @Mapper
 public interface LecturesMapper {
 
-    @Mapping(target = "lectures", source = "lecturesDTO")
+    @Mapping(target = "expert", source = "expertDTO")
     Lecture lectureDTOToLecture(LectureDTO lectureDTO);
 
-    @Mapping(target = "lecturesDTO", source = "lectures")
+    @Mapping(target = "expertDTO", source = "expert")
     LectureDTO lectureToLectureDto(Lecture lecture);
 }

@@ -8,10 +8,10 @@ import pl.pjatk.projekt.model.courses.Expert;
 @Mapper
 public interface ExpertsMapper {
 
-    @Mapping(target = "expert", source = "expertDTO")
+    @Mapping(target = "lectures", source = "lecturesDTO")
     Expert expertDTOToExpert(ExpertDTO expertDTO);
 
-    @Mapping(target = "expertDTO", source = "expert")
+    @Mapping(target = "lecturesDTO", source = "lectures")
     ExpertDTO expertToExpertDTO(Expert expert);
 
 }
