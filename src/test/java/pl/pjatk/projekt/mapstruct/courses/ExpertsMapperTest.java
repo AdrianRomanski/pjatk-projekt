@@ -14,7 +14,7 @@ public class ExpertsMapperTest {
     ExpertsMapper mapper = new ExpertsMapperImpl();
 
     @Test
-    @DisplayName("Should map object with given values to DTO")
+    @DisplayName("")
     void expertToExpertDTO() {
         // given
         Expert expert = Expert.builder()
@@ -29,7 +29,7 @@ public class ExpertsMapperTest {
     }
 
     @Test
-    @DisplayName("Should map object with given values from DTO")
+    @DisplayName("")
     void expertDTOToExpert() {
         // given
         ExpertDTO expertDTO = ExpertDTO.builder()
