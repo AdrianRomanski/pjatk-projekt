@@ -7,6 +7,7 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import pl.pjatk.projekt.dto.courses.ExpertDTO;
+import pl.pjatk.projekt.mapstruct.courses.ExpertsMapper;
 import pl.pjatk.projekt.model.courses.Expert;
 import pl.pjatk.projekt.repositories.courses.ExpertRepository;
 
@@ -20,6 +21,9 @@ public class ExpertServiceImplTest {
 
     @Mock
     ExpertRepository expertRepository;
+
+    @Mock
+    ExpertsMapper expertsMapper;
 
     @InjectMocks
     ExpertServiceImpl expertService;

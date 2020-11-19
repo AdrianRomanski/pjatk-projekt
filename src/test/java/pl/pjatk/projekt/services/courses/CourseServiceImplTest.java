@@ -8,6 +8,7 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import pl.pjatk.projekt.dto.courses.CourseDTO;
+import pl.pjatk.projekt.mapstruct.courses.CoursesMapper;
 import pl.pjatk.projekt.model.courses.Course;
 import pl.pjatk.projekt.repositories.courses.CourseRepository;
 
@@ -22,6 +23,9 @@ public class CourseServiceImplTest {
     @Mock
     CourseRepository courseRepository;
 
+    @Mock
+    CoursesMapper mapper;
+
     @InjectMocks
     CourseServiceImpl courseService;
 
@@ -31,7 +35,6 @@ public class CourseServiceImplTest {
     }
 
     @Test
-    @Disabled
     @DisplayName("Should Return List of Courses")
     void getCourses(){
         // given
