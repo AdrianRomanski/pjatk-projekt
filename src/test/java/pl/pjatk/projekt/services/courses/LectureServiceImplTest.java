@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+import pl.pjatk.projekt.dto.courses.LectureDTO;
 import pl.pjatk.projekt.model.courses.Lecture;
 import pl.pjatk.projekt.repositories.courses.LectureRepository;
 
@@ -36,7 +37,7 @@ public class LectureServiceImplTest {
 
         // when
         when(lectureRepository.findAll()).thenReturn(lectures);
-        List<Lecture> returnObj = lectureService.getLectures();
+        List<LectureDTO> returnObj = lectureService.getLecturesDTO();
 
         // then
         assertEquals(returnObj.size(), 4);
