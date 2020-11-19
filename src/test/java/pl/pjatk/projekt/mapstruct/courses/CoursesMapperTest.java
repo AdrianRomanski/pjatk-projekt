@@ -10,15 +10,17 @@ class CoursesMapperTest {
 
     CoursesMapper mapper = new CoursesMapperImpl();
 
-
     @Test
     @DisplayName("")
     void courseDTOtoCourse() {
         //given
-        Course course = Course.builder().name("Test").build();
-        //when
+        Course course = Course.builder()
+                .name("Test")
+                .build();
 
+        //when
         CourseDTO returnDTO = mapper.courseToCourseDTO(course);
+
         //then
         Assertions.assertEquals(course.getName(), returnDTO.getName());
     }
@@ -27,10 +29,13 @@ class CoursesMapperTest {
     @DisplayName("")
     void courseToCourseDTO() {
         //given
-        CourseDTO courseDTO = CourseDTO.builder().name("Test").build();
-        //when
+        CourseDTO courseDTO = CourseDTO.builder()
+                .name("Test")
+                .build();
 
+        //when
         Course returnObj = mapper.courseDTOtoCourse(courseDTO);
+
         //then
         Assertions.assertEquals(courseDTO.getName(), returnObj.getName());
     }
