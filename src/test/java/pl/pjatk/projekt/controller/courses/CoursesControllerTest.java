@@ -1,6 +1,5 @@
 package pl.pjatk.projekt.controller.courses;
 
-import lombok.val;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -13,10 +12,8 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import pl.pjatk.projekt.dto.courses.CourseDTO;
 import pl.pjatk.projekt.dto.courses.LectureDTO;
 import pl.pjatk.projekt.enums.Category;
-import pl.pjatk.projekt.model.courses.Course;
 import pl.pjatk.projekt.services.courses.CourseServiceImpl;
 
-import java.util.Collections;
 import java.util.List;
 
 import static java.util.Collections.*;
