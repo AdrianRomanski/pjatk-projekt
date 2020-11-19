@@ -7,6 +7,7 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import pl.pjatk.projekt.dto.courses.LectureDTO;
+import pl.pjatk.projekt.mapstruct.courses.LecturesMapper;
 import pl.pjatk.projekt.model.courses.Lecture;
 import pl.pjatk.projekt.repositories.courses.LectureRepository;
 
@@ -20,6 +21,9 @@ public class LectureServiceImplTest {
 
     @Mock
     LectureRepository lectureRepository;
+
+    @Mock
+    LecturesMapper mapper;
 
     @InjectMocks
     LectureServiceImpl lectureService;
