@@ -6,9 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import pl.pjatk.projekt.dto.ProductDTO;
 import pl.pjatk.projekt.enums.Category;
-import pl.pjatk.projekt.model.product.Product;
 
-import javax.persistence.OneToMany;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;

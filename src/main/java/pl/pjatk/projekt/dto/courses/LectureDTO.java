@@ -3,11 +3,6 @@ package pl.pjatk.projekt.dto.courses;
 import lombok.*;
 import pl.pjatk.projekt.dto.ProductDTO;
 import pl.pjatk.projekt.enums.Category;
-import pl.pjatk.projekt.model.product.Product;
-
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.ManyToOne;
 
 @Getter
 @Setter

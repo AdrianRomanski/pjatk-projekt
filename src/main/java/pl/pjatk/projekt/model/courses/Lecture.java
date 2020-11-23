@@ -1,6 +1,5 @@
 package pl.pjatk.projekt.model.courses;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.*;
 import pl.pjatk.projekt.enums.Category;
 import pl.pjatk.projekt.model.product.Product;

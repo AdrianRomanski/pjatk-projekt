@@ -4,7 +4,6 @@ import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import pl.pjatk.projekt.dto.courses.CourseDTO;
 import pl.pjatk.projekt.mapstruct.courses.CoursesMapper;
-import pl.pjatk.projekt.mapstruct.courses.CoursesMapperImpl;
 import pl.pjatk.projekt.repositories.courses.CourseRepository;
 
 import java.util.List;

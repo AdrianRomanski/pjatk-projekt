@@ -1,6 +1,5 @@
 package pl.pjatk.projekt.controller.courses;
 
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -12,8 +11,6 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import pl.pjatk.projekt.dto.courses.ExpertDTO;
 import pl.pjatk.projekt.dto.courses.LectureDTO;
-import pl.pjatk.projekt.model.courses.Expert;
-import pl.pjatk.projekt.model.courses.Lecture;
 import pl.pjatk.projekt.services.courses.LectureServiceImpl;
 
 import java.time.LocalDate;
