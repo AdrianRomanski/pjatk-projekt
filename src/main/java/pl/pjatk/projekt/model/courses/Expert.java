@@ -1,7 +1,5 @@
-package pl.pjatk.projekt.model.events;
+package pl.pjatk.projekt.model.courses;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.*;
 import pl.pjatk.projekt.model.person.Person;
 
@@ -21,10 +19,8 @@ public class Expert extends Person {
 
     private String specialization;
 
-    @JsonManagedReference
     @OneToMany(mappedBy = "expert")
     private List<Lecture> lectures;
-
 
     @Builder
     public Expert(String firstName, String lastName, LocalDate ageOfBirth, String specialization, List<Lecture> lectures) {

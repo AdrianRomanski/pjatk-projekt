@@ -1,7 +1,5 @@
-package pl.pjatk.projekt.model.events;
+package pl.pjatk.projekt.model.courses;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.*;
 import pl.pjatk.projekt.enums.Category;
 import pl.pjatk.projekt.model.product.Product;
@@ -9,7 +7,6 @@ import pl.pjatk.projekt.model.product.Product;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.ManyToOne;
-import java.time.LocalDate;
 
 @Getter
 @Setter
@@ -22,7 +19,6 @@ public class Lecture extends Product {
     private int numberOfLectures;
     private Boolean availableDuringCovid;
 
-    @JsonBackReference
     @ManyToOne(fetch = FetchType.EAGER)
     private Expert expert;
 
