@@ -9,6 +9,7 @@ import pl.pjatk.projekt.enums.BookType;
 import pl.pjatk.projekt.enums.Category;
 import pl.pjatk.projekt.model.books.Author;
 import pl.pjatk.projekt.model.books.Book;
+import pl.pjatk.projekt.model.electronics.Headset;
 import pl.pjatk.projekt.model.electronics.SmartWatch;
 import pl.pjatk.projekt.model.electronics.Tv;
 import pl.pjatk.projekt.model.electronics.Xbox;
@@ -20,6 +21,7 @@ import pl.pjatk.projekt.repositories.book.BookRepository;
 import pl.pjatk.projekt.repositories.courses.CourseRepository;
 import pl.pjatk.projekt.repositories.courses.ExpertRepository;
 import pl.pjatk.projekt.repositories.courses.LectureRepository;
+import pl.pjatk.projekt.repositories.electronics.HeadsetRepository;
 import pl.pjatk.projekt.repositories.electronics.SmartWatchRepository;
 import pl.pjatk.projekt.repositories.electronics.TvRepository;
 import pl.pjatk.projekt.repositories.electronics.XboxRepository;
@@ -43,7 +45,7 @@ public class ApplicationBootstrap implements ApplicationListener<ContextRefreshe
     private final SmartWatchRepository smartWatchRepository;
     private final XboxRepository xboxRepository;
     private final TvRepository tvRepository;
-
+    private final HeadsetRepository headsetRepository;
 
     @Override
     @SneakyThrows
@@ -142,6 +144,17 @@ public class ApplicationBootstrap implements ApplicationListener<ContextRefreshe
 
         tvRepository.save(tv);
 
+        //Headset
+
+        Headset headset = Headset.builder()
+                .name("QuietComfort 35 II")
+                .category(Category.ELECTRONICS)
+                .price(1199.99)
+                .brand("BOSE")
+                .wireless(true)
+                .build();
+
+        headsetRepository.save(headset);
 
         initCourses();
     }
