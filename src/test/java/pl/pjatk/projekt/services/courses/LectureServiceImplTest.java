@@ -1,4 +1,4 @@
-package pl.pjatk.projekt.services.events;
+package pl.pjatk.projekt.services.courses;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -6,7 +6,9 @@ import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-import pl.pjatk.projekt.model.events.Lecture;
+import pl.pjatk.projekt.dto.courses.LectureDTO;
+import pl.pjatk.projekt.mapstruct.courses.LecturesMapper;
+import pl.pjatk.projekt.model.courses.Lecture;
 import pl.pjatk.projekt.repositories.courses.LectureRepository;
 
 import java.util.Arrays;
@@ -19,6 +21,9 @@ public class LectureServiceImplTest {
 
     @Mock
     LectureRepository lectureRepository;
+
+    @Mock
+    LecturesMapper mapper;
 
     @InjectMocks
     LectureServiceImpl lectureService;
@@ -36,7 +41,7 @@ public class LectureServiceImplTest {
 
         // when
         when(lectureRepository.findAll()).thenReturn(lectures);
-        List<Lecture> returnObj = lectureService.getLectures();
+        List<LectureDTO> returnObj = lectureService.getLecturesDTO();
 
         // then
         assertEquals(returnObj.size(), 4);

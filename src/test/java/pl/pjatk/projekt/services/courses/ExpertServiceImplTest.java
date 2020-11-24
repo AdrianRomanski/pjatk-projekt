@@ -1,4 +1,4 @@
-package pl.pjatk.projekt.services.events;
+package pl.pjatk.projekt.services.courses;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -6,7 +6,9 @@ import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-import pl.pjatk.projekt.model.events.Expert;
+import pl.pjatk.projekt.dto.courses.ExpertDTO;
+import pl.pjatk.projekt.mapstruct.courses.ExpertsMapper;
+import pl.pjatk.projekt.model.courses.Expert;
 import pl.pjatk.projekt.repositories.courses.ExpertRepository;
 
 import java.util.Arrays;
@@ -19,6 +21,9 @@ public class ExpertServiceImplTest {
 
     @Mock
     ExpertRepository expertRepository;
+
+    @Mock
+    ExpertsMapper expertsMapper;
 
     @InjectMocks
     ExpertServiceImpl expertService;
@@ -36,7 +41,7 @@ public class ExpertServiceImplTest {
 
         // when
         when(expertRepository.findAll()).thenReturn(experts);
-        List<Expert> returnObj = expertService.getExperts();
+        List<ExpertDTO> returnObj = expertService.getExpertsDTO();
 
         // then
         assertEquals(returnObj.size(), 3);
