@@ -6,7 +6,7 @@ We are a group of Students From https://www.pja.edu.pl
 | ----------- | ----------- |
 | [Paweł  Dąbrowski](https://github.com/PawelDabrowski83)    | Title       |
 | Stanisław Lammel    | Title       |
-| [Michał Błoch](https://github.com/Lotnest)    | Title       |
+| [Michał Błoch](https://github.com/Lotnest)    | [Link](https://www.linkedin.com/in/michal-bloch-warsaw/)       |
 | Evgenii Kosmogradskii-Ivanov    | Title       |
 | Aleks Łapiński    | Title       |
 | Mateusz  Deska    | Title       |
