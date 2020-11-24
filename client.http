@@ -22,6 +22,8 @@ GET http://localhost:8080/api/smartwatch
 Accept: application/json
 ###
 
+GET http://localhost:8080/api/tv
+Accept: application/json
 
 --WebAppBoundary
 Content-Disposition: form-data; name="file"; filename="pom.xml"
