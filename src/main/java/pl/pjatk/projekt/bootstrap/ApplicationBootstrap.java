@@ -10,6 +10,7 @@ import pl.pjatk.projekt.enums.Category;
 import pl.pjatk.projekt.model.books.Author;
 import pl.pjatk.projekt.model.books.Book;
 import pl.pjatk.projekt.model.electronics.SmartWatch;
+import pl.pjatk.projekt.model.electronics.Tv;
 import pl.pjatk.projekt.model.electronics.Xbox;
 import pl.pjatk.projekt.model.events.Course;
 import pl.pjatk.projekt.model.events.Expert;
@@ -20,6 +21,7 @@ import pl.pjatk.projekt.repositories.courses.CourseRepository;
 import pl.pjatk.projekt.repositories.courses.ExpertRepository;
 import pl.pjatk.projekt.repositories.courses.LectureRepository;
 import pl.pjatk.projekt.repositories.electronics.SmartWatchRepository;
+import pl.pjatk.projekt.repositories.electronics.TvRepository;
 import pl.pjatk.projekt.repositories.electronics.XboxRepository;
 
 import java.time.LocalDate;
@@ -40,6 +42,7 @@ public class ApplicationBootstrap implements ApplicationListener<ContextRefreshe
     // Electronics
     private final SmartWatchRepository smartWatchRepository;
     private final XboxRepository xboxRepository;
+    private final TvRepository tvRepository;
 
 
     @Override
@@ -126,6 +129,18 @@ public class ApplicationBootstrap implements ApplicationListener<ContextRefreshe
         xboxRepository.save(xbox1);
         xboxRepository.save(xbox2);
         xboxRepository.save(xbox3);
+
+        //Tv
+
+        Tv tv = Tv.builder()
+                .name("OLED")
+                .category(Category.ELECTRONICS)
+                .price(2999.99)
+                .brand("LG")
+                .screenSize(50)
+                .build();
+
+        tvRepository.save(tv);
 
 
         initCourses();
