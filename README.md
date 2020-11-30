@@ -11,7 +11,7 @@ We are a group of Students From https://www.pja.edu.pl
 | Aleks Łapiński    | Title       |
 | Mateusz  Deska    | Title       |
 | Tomasz  Buczyński    | Title       |
-| Aleksandra  Najmowicz    | Title       |
+| [Aleksandra  Najmowicz](https://github.com/anajmowicz)    | [Link](https://www.linkedin.com/in/aleksandra-najmowicz-warszawa/)       |
 | Mateusz  Dąbrowski    | Title       |
 | Damian  Rastawicki    | Title       |
 | Paweł  Nic    | Title       |
