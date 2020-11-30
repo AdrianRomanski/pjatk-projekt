@@ -9,10 +9,7 @@ import pl.pjatk.projekt.enums.BookType;
 import pl.pjatk.projekt.enums.Category;
 import pl.pjatk.projekt.model.books.Author;
 import pl.pjatk.projekt.model.books.Book;
-import pl.pjatk.projekt.model.electronics.Headset;
-import pl.pjatk.projekt.model.electronics.SmartWatch;
-import pl.pjatk.projekt.model.electronics.Tv;
-import pl.pjatk.projekt.model.electronics.Xbox;
+import pl.pjatk.projekt.model.electronics.*;
 import pl.pjatk.projekt.model.courses.Course;
 import pl.pjatk.projekt.model.courses.Expert;
 import pl.pjatk.projekt.model.courses.Lecture;
@@ -21,10 +18,7 @@ import pl.pjatk.projekt.repositories.book.BookRepository;
 import pl.pjatk.projekt.repositories.courses.CourseRepository;
 import pl.pjatk.projekt.repositories.courses.ExpertRepository;
 import pl.pjatk.projekt.repositories.courses.LectureRepository;
-import pl.pjatk.projekt.repositories.electronics.HeadsetRepository;
-import pl.pjatk.projekt.repositories.electronics.SmartWatchRepository;
-import pl.pjatk.projekt.repositories.electronics.TvRepository;
-import pl.pjatk.projekt.repositories.electronics.XboxRepository;
+import pl.pjatk.projekt.repositories.electronics.*;
 
 import java.time.LocalDate;
 import java.util.Arrays;
@@ -46,6 +40,7 @@ public class ApplicationBootstrap implements ApplicationListener<ContextRefreshe
     private final XboxRepository xboxRepository;
     private final TvRepository tvRepository;
     private final HeadsetRepository headsetRepository;
+    private final LaptopRepository laptopRepository;
 
     @Override
     @SneakyThrows
@@ -155,6 +150,19 @@ public class ApplicationBootstrap implements ApplicationListener<ContextRefreshe
                 .build();
 
         headsetRepository.save(headset);
+
+        // Laptop
+
+        Laptop laptop = Laptop.builder()
+                .name("MacBook Pro")
+                .category(Category.ELECTRONICS)
+                .price(6199.99)
+                .brand("Apple")
+                .screenSize(15.0)
+                .RAM(16)
+                .build();
+
+        laptopRepository.save(laptop);
 
         initCourses();
     }
